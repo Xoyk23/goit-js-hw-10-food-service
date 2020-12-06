@@ -14,37 +14,7 @@ const savedThemeVariants = localStorage.getItem('themeVariants');
 const parsedThemeVariants = JSON.parse(savedThemeVariants);
 
 let currentParsedTheme = localStorage.getItem('currentTheme');
-console.log(currentParsedTheme);
 
-console.log(parsedThemeVariants);
-console.log(bodyRef.classList);
-console.log(switcherRef.checked);
-
-// if (localStorage.getItem('currentTheme') === null) {
-//   bodyRef.className.add(parsedThemeVariants.LIGHT);
-//   bodyRef.className = getThemeType;
-
-//   if (localStorage.getItem('currentTheme') === 'dark-theme') {
-//     toggle.checked = true;
-//   }
-// }
-console.log(parsedThemeVariants.LIGHT);
-
-// if (bodyRef.classList.value === '') {
-//   bodyRef.classList.add(parsedThemeVariants.LIGHT);
-//   localStorage.setItem('currentTheme', bodyRef.className);
-// } else if (bodyRef.classList.contains(parsedThemeVariants.LIGHT)) {
-//   bodyRef.classList.remove(parsedThemeVariants.LIGHT);
-//   bodyRef.classList.add(currentParsedTheme);
-
-//   switcherRef.checked = true;
-
-//   localStorage.removeItem('currentTheme', JSON.stringify(parsedTheme.LIGHT));
-
-//   localStorage.setItem('currentTheme', JSON.stringify(parsedTheme.DARK));
-// }
-
-console.log(switcherRef.checked);
 if (localStorage.getItem('currentTheme') === null) {
   bodyRef.classList.add(parsedThemeVariants.LIGHT);
   // switcherRef.checked = false;
